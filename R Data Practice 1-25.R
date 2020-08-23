@@ -418,3 +418,5 @@ stock_data %>%
 stock_data[order(-amount) & amount > 0, .(times = amount[1]/amount[.N]),
      keyby = .(date, industry)
      ]
+
+
